@@ -15,11 +15,11 @@ import django_heroku
 from django.core.exceptions import ImproperlyConfigured
 
 
-os.environ["DATABASE_HOST"] = "localhost"
+os.environ["DATABASE_HOST"] = "ec2-23-23-241-119.compute-1.amazonaws.com"
 os.environ["DATABASE_PORT"] = "5432"
-os.environ["DATABASE_NAME"] = "bdf"
-os.environ["DATABASE_USER"] = "postgres"
-os.environ["DATABASE_PASSWORD"] = "user"
+os.environ["DATABASE_NAME"] = "d5rob01pffgvho"
+os.environ["DATABASE_USER"] = "mssvokjpiyxfsz"
+os.environ["DATABASE_PASSWORD"] = "051c98ed4102ffb4b3f43dd0d2dea8d535955ac917fde7c34f080eba69c0cca2"
 
 
 def get_env_variable(var_name):
