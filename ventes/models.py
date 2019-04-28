@@ -30,6 +30,7 @@ class Vente(models.Model):
     purchaseBy = models.CharField(max_length = 300)
     amount = models.FloatField()
     quantite = models.IntegerField(default=1)
+    benefit =  models.FloatField()
 
 
 def Vente_to_json(self):
@@ -40,7 +41,8 @@ def Vente_to_json(self):
         "selledBy" : self.selledBy,
         "purchaseBy" : self.purchaseBy,
         "amount" : self.amount,
-        "quantité" : self.quantite
+        "quantité" : self.quantite,
+        "benefit" : self.benefit
     }
 
 
