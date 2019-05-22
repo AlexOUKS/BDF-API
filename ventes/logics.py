@@ -96,6 +96,7 @@ def load(request):
                 vente.purchaseBy = line3[3].replace('\"', "")
                 vente.quantite = line3[5].replace('\"', "")
                 vente.amount = line3[6].replace('\"', "")
+                vente.benefit = line3[10].replace('\"', "")
                 venteExist = Vente.objects.filter(dateVente = vente.dateVente)
                 if Validators.is_not_empty(venteExist):
                     print(o)
