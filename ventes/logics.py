@@ -158,3 +158,14 @@ def getVenteDF(request):
     else:
         print("pas un get")
         return HttpResponseBadRequest("Mauvaise requête")
+        
+def deleteVentes(request):
+    reponse = []
+    if(request.method == "GET"):
+            
+            allVente = Vente.objects.all().delete()
+           
+        return JsonResponse(reponse, safe= False)
+    else:
+        print("pas un get")
+        return HttpResponseBadRequest("Mauvaise requête")
